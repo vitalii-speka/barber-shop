@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\header-slider\\mobile-slider-img-3.jpg":[["mobile-slider-img-3.e88446c6.jpg","images/header-slider/mobile-slider-img-3.jpg"],"images/header-slider/mobile-slider-img-3.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\header-slider\\mobile-slider-img-3.jpg":[["mobile-slider-img-3.e88446c6.jpg","images/header-slider/mobile-slider-img-3.jpg"],"images/header-slider/mobile-slider-img-3.jpg"],"C:\\Users\\Professional\\Documents\\GitHub\\parcel-project-template\\src\\images\\section-2-prices\\mob-prices-img.png":[["mob-prices-img.c1bb9c2e.png","images/section-2-prices/mob-prices-img.png"],"images/section-2-prices/mob-prices-img.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60410" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53575" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
