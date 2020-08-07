@@ -365,18 +365,17 @@ a {
   color: #ffffff;
 }
 
-h2 {
-  font-family: "Raleway", sans-serif;
+/*h2 {
+  font-family: $font-family;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: $primary-text-color;
   max-width: 330px;
   padding-bottom: 20px;
 }
-
 h3 {
   position: relative;
   font-family: Open Sans;
@@ -386,28 +385,26 @@ h3 {
   line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #303030;
+  color: $primary-text-color;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: $primary-text-color;
+    transform: translateX(-80px) translateY(11.5px);
+  }
 }
-h3::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 1px;
-  background-color: #303030;
-  transform: translateX(-80px) translateY(11.5px);
-}
-
 .text {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-family-open-sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.02em;
-  color: #555555;
-}
-
+  color: $second-text-color;
+}*/
 .hero-title {
   font-size: 48px;
   line-height: 1.17;
@@ -442,6 +439,7 @@ header {
 
 h2 {
   margin: 0px;
+  max-width: 420px;
 }
 
 h3 {
