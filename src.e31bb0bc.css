@@ -365,8 +365,36 @@ a {
   color: #ffffff;
 }
 
-.header-title {
-  color: black;
+.hero-title {
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.logo {
+  fill: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    fill: #303030;
+  }
+}
+
+.hero-overlay {
+  max-width: 1125px;
+  max-height: 680px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(/mobile-slider-img-3.e88446c6.jpg);
+  background-color: #303030;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: #ffffff;
 }
 
 h2 {
@@ -413,7 +441,7 @@ ul {
     content: "————";
     display: inline-block;
     color: #303030;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   .Why-we-header {
@@ -448,6 +476,10 @@ ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+  }
+
+  .box-content {
+    padding: 20px 30px;
   }
 
   .features .item {
@@ -511,6 +543,10 @@ ul {
     margin-left: 0px;
   }
 
+  .box-content {
+    padding: 20px 18px;
+  }
+
   .features .item {
     width: 170px;
     height: 133px;
@@ -519,18 +555,7 @@ ul {
 /* .mobile-wrapper {
   padding: 0 31px;
 } */
-.feature-content {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.16;
-  text-align: center;
-  color: #303030;
-}
-
 .figure {
-  padding: 20px 35px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -551,6 +576,16 @@ ul {
   line-height: 1.37;
   text-align: center;
   color: #ff6c00;
+}
+
+.feature-content {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.16;
+  text-align: center;
+  color: #303030;
 }
 
 .masters {
