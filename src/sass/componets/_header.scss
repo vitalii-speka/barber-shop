@@ -48,7 +48,7 @@ p {
 
 .nav-list {
   @media screen and (max-width: $before-tablet) {
-    li + li {
+    li+li {
       margin-top: 24px;
     }
   }
@@ -58,7 +58,7 @@ p {
     margin-right: 5em;
     margin-left: 25px;
 
-    li + li {
+    li+li {
       margin-left: 30px;
     }
   }
@@ -80,7 +80,7 @@ p {
   }
 
   @media screen and (min-width: $desktop) {
-    margin-left: 130px;
+    // margin-left: 130px;
   }
 }
 
@@ -103,7 +103,7 @@ p {
     @media screen and (max-width: $before-tablet) {
       margin-top: 64px;
 
-      li + li {
+      li+li {
         margin-top: 24px;
       }
     }
@@ -116,7 +116,7 @@ p {
       align-items: center;
 
       @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
-        li + li {
+        li+li {
           margin-bottom: 20px;
         }
       }
@@ -129,7 +129,7 @@ p {
 
       flex-direction: row;
 
-      li + li {
+      li+li {
         margin-left: 40px;
       }
     }
@@ -161,7 +161,7 @@ p {
     display: flex;
     flex-direction: row;
     position: absolute;
-    left: 180px;
+    left: 230px;
     top: 50px;
     min-width: 610px;
   }
@@ -200,7 +200,7 @@ p {
     @media screen and (max-width: $before-tablet) {
       margin-top: 50px;
 
-      li + li {
+      li+li {
         margin-top: 24px;
       }
     }
@@ -210,7 +210,7 @@ p {
       color: $primary-text-color;
       display: flex;
 
-      li + li {
+      li+li {
         margin-left: 40px;
       }
     }
@@ -412,50 +412,50 @@ p {
   }
 }
 
-.hero-overlay {
-  // position: relative;
+// .hero-overlay {
+//   // position: relative;
 
-  max-width: 1125px;
-  max-height: 680px;
-  margin-right: auto;
-  margin-left: auto;
-  // background-image:
-  //     url(..//images/header-slider/mobile-slider-img-3.jpg);
-  background-color: $primary-text-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+//   max-width: 1125px;
+//   max-height: 680px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   // background-image:
+//   //     url(..//images/header-slider/mobile-slider-img-3.jpg);
+//   background-color: $primary-text-color;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
 
-  @media screen and (max-width: $before-tablet) {
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
-    }
-  }
+//   @media screen and (max-width: $before-tablet) {
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
+//     }
+//   }
 
-  @media screen and (min-width: $tablet) {
-    margin-left: 160px;
-    background-image: url(..//images/header-slider/tabl-slider-img-3.jpg);
+//   @media screen and (min-width: $tablet) {
+//     margin-left: 160px;
+//     background-image: url(..//images/header-slider/tabl-slider-img-3.jpg);
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(..//images/header-slider/tabl-slider-img-3@2x.jpg);
-    }
-  }
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(..//images/header-slider/tabl-slider-img-3@2x.jpg);
+//     }
+//   }
 
-  @media screen and (min-width: $desktop) {
-    margin-left: 250px;
-    background-image: url(..//images/header-slider/desk-slider-img-3.jpg);
+//   @media screen and (min-width: $desktop) {
+//     margin-left: 250px;
+//     background-image: url(..//images/header-slider/desk-slider-img-3.jpg);
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(..//images/header-slider/desk-slider-img-3@2x.jpg);
-    }
-  }
-}
+//     @media screen and (min-device-pixel-ratio: 2),
+//       screen and (min-resolution: 192dpi),
+//       screen and (min-resolution: 2dppx) {
+//       background-image: url(..//images/header-slider/desk-slider-img-3@2x.jpg);
+//     }
+//   }
+// }
 
 .backdrop {
   position: fixed;
