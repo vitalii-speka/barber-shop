@@ -4,8 +4,8 @@
   width: 100%;
   background-image: linear-gradient(
       to right,
-      rgba(25, 28, 38, 0.8),
-      rgba(25, 28, 38, 0.8)
+      rgba(25, 28, 38, 0.9),
+      rgba(25, 28, 38, 0.9)
     ),
     url(..//images/footer/bg-footer.jpg);
   background-repeat: no-repeat;
@@ -90,13 +90,30 @@
 
   color: $price-alt-text-color;
 
-  &:hover,
-  &:focus {
+  @media screen and (min-width: $desktop) {
+    width: 230px;
+  }
+}
+
+.address-list-item {
+  &:hover .links {
     color: $accent-color;
+  }
+}
+
+.address-list-item {
+  &:hover .address-svg {
+    fill: $accent-color;
+  }
+}
+
+.bias-svg {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 25px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 230px;
+    margin-bottom: 25px;
   }
 }
 
