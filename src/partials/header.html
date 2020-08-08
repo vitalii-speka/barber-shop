@@ -1,49 +1,73 @@
 <div class="hero-overlay">
-    <section class="hero">
-        <header>
-            <a href="./"><svg
-            width="69"
-            height="55"
-            class="logo"
-          >
-          <use
-          href="./images/svg/sprite.svg#logo"
-        ></use>
-            </svg
-          ></a>
-        <nav>
-            <ul>
-                <li>О нас</li>
-                <li class="nav_item">Услуги и цены</li>
-                <li>Мастера</li>
-                <li>Контакты</li>
+  <section class="hero">
+    <header class="page-header">
+      <a href="./"
+        ><svg width="69" height="55" class="logo">
+          <use href="./images/svg/sprite.svg#logo"></use></svg
+      ></a>
+
+      <div class="is-hidden">
+        <div class="drop-down-menu" id="menu-container" data-menu>
+          <div class="header-container">
+            <nav class="header-nav">
+              <ul class="nav-list">
+                <li><a class="header-link">О нас</a></li>
+                <li class="nav_item">
+                  <a class="header-link">Услуги и цены</a>
+                </li>
+                <li><a class="header-link">Мастера</a></li>
+                <li><a class="header-link">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <ul class="header__conacts-list">
+              <li class="header__contacts-item">
+                <a href="tel:+380441111111" class="header__contacts-link"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li><button class="button">онлайн-запись</button></li>
             </ul>
-        </nav>
+          </div>
 
-        <ul>
-            <li>+38 044 111 11 11</li>
-            <li> <button>онлайн-запись</button>
-            </li>
-        </ul>
-
-        <ul>
-            <li>Instagram</li>
-            <li>Youtube</li>
-        </ul>
-            <button>
-                <svg width="24" height="20">
-                    <use href="./images/svg/sprite.svg#icon-menu"></use>
-                    <use href="./images/svg/sprite.svg#icon-close"></use>
-                </svg>
-            </button>
-        </header>
-
-            <div class="container">
-                <p>A hair salon for men in Kyiv</p>
-                <h1 class="hero-title">BarberShop</h1>
-
-                <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+          <address class="header-soc">
+            <ul>
+              <li aria-label="Instagram"><a class="instagram">Instagram</a></li>
+              <li aria-label="Youtube"><a class="youtube">Youtube</a></li>
+            </ul>
+          </address>
         </div>
+      </div>
 
-        </section>
+      <button
+        class="drop-down-button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg
+          width="24"
+          height="20"
+          aria-label="Переключатель мобильного меню"
+          class="drop-down-icon"
+        >
+          <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
+          <use
+            class="icon-cross"
+            href="./images/svg/sprite.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
+    </header>
+
+    <div class="container--hero">
+      <h2 class="hero-title--second">A hair salon for men in Kyiv</h2>
+      <h1 class="hero-title">BarberShop</h1>
+
+      <p class="hero-info">
+        Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+        вкусом.
+      </p>
+    </div>
+  </section>
 </div>
