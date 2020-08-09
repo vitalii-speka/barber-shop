@@ -78,6 +78,12 @@
   }
 }
 
+.comma {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .links {
   margin-left: 16px;
   font-family: $font-family-open-sans;
