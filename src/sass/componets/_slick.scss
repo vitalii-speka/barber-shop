@@ -9,13 +9,17 @@ body {
 .slider {
     position: relative;
     overflow: hidden;
-    min-width: 1125px;
+    max-width: 609px;
     min-height: 680px;
     margin-left: 160px;
     // margin-right: auto;
 
     @media screen and (max-width: $before-tablet) {
         display: none;
+    }
+
+    @media screen and (min-width: $desktop) {
+        min-width: 1125px;
     }
 
 }
@@ -159,8 +163,8 @@ body {
     flex: 0 1 auto;
     width: 8px;
     height: 2px;
-    margin-right: 3px;
-    margin-left: 3px;
+    margin-right: 5px;
+    margin-left: 25px;
     text-indent: -999px;
     cursor: pointer;
     background-color: #9DA4BD;
