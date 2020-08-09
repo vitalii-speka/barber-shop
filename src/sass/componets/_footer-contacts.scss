@@ -4,8 +4,8 @@
   width: 100%;
   background-image: linear-gradient(
       to right,
-      rgba(25, 28, 38, 0.8),
-      rgba(25, 28, 38, 0.8)
+      rgba(25, 28, 38, 0.9),
+      rgba(25, 28, 38, 0.9)
     ),
     url(..//images/footer/bg-footer.jpg);
   background-repeat: no-repeat;
@@ -87,16 +87,36 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   cursor: pointer;
+  transition: all $animation-effect;
 
   color: $price-alt-text-color;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-
   @media screen and (min-width: $desktop) {
     width: 230px;
+  }
+}
+
+.address-list-item {
+  &:hover .links {
+    color: $accent-color;
+  }
+}
+
+.address-svg {
+  transition: all $animation-effect;
+}
+
+.address-list-item {
+  fill: transparent;
+
+  &:hover .address-svg {
+    fill: $accent-color;
+  }
+}
+
+.bias-svg {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 25px;
   }
 }
 
