@@ -1,4 +1,4 @@
-@media screen and (min-width: $mobile) {
+// @media screen and (min-width: $mobile) {
   .pricelist {
     padding-top: 84px;
     padding-bottom: 84px;
@@ -90,7 +90,7 @@
       border-bottom: 1px solid $h3-alt-text-color;
     }
   }
-}
+// }
 @media screen and (min-width: $tablet) {
   .pricelist {
     padding-top: 100px;

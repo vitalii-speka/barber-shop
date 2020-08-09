@@ -8,7 +8,7 @@
     display: none;
   }
 }
-@media screen and (min-width: $mobile) {
+// @media screen and (min-width: $mobile) {
   .aboutus {
     & .aboutus-container {
       display: flex;
@@ -78,7 +78,7 @@
       }
     }
   }
-}
+// }
 
 @media screen and (min-width: $tablet) {
   .aboutus {
