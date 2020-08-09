@@ -832,8 +832,12 @@ h1, h2, p {
 }
 @media screen and (min-width: 480px) {
   .aboutus {
+    justify-content: center;
     padding-top: 84px;
     padding-bottom: 84px;
+  }
+  .aboutus .aboutus-container {
+    display: flex;
   }
   .aboutus .text {
     font-family: "Open Sans", sans-serif;
@@ -904,7 +908,7 @@ h1, h2, p {
     max-width: 330px;
   }
   .aboutus .aboutus-container {
-    display: inline-flex;
+    display: flex;
   }
   .aboutus .aboutus-container .aboutus-image-container-tablet {
     min-width: 330px;
@@ -929,7 +933,7 @@ h1, h2, p {
     padding-bottom: 130px;
   }
   .aboutus .aboutus-container {
-    display: inline-flex;
+    display: flex;
   }
   .aboutus .aboutus-container .aboutus-image-container-tablet {
     display: none;
@@ -1106,13 +1110,13 @@ h1, h2, p {
     border-bottom: 1px solid rgba(157, 164, 189, 0.6);
   }
 }
-@media screen and (max-width: 479px), (min-width: 480px) {
-  .feature-container {
+@media screen and (min-width: 480px) {
+  .features-container {
     background-color: #fff;
     margin-left: auto;
     margin-right: auto;
     padding: 0 31px;
-    width: 480px;
+    max-width: 480px;
   }
 
   .old-school {
@@ -1199,9 +1203,10 @@ h1, h2, p {
   }
 }
 @media screen and (min-width: 768px) {
-  .feature-container {
-    padding: 0 40px;
-    width: 768px;
+  .features-container {
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 
   .features {
@@ -1226,7 +1231,10 @@ h1, h2, p {
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  .features-container {
+    max-width: 1280px;
+    padding-left: 55px;
+    padding-right: 55px;
     display: flex;
     flex-direction: row-reverse;
   }
@@ -1256,9 +1264,6 @@ h1, h2, p {
     height: 133px;
   }
 }
-/* .mobile-wrapper {
-  padding: 0 31px;
-} */
 .figure {
   font-family: Open Sans;
   font-style: normal;
