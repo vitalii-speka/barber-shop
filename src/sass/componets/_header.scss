@@ -21,31 +21,37 @@ p {
     padding-right: 31px;
   }
 
-  @media screen and (min-width: $tablet) {
-    padding-top: 40px;
-    padding-left: 39px;
-    padding-right: 39px;
+  @media screen and (max-width: $before-desktop) {
+    // padding-top: 40px;
+    // padding-left: 39px;
+    // padding-right: 39px;
 
     color: $h2-alt-text-color;
   }
 
-  @media screen and (min-width: $desktop) {
-    padding-top: 40px;
-    padding-left: 55px;
-    padding-right: 55px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   padding-top: 40px;
+  //   padding-left: 55px;
+  //   padding-right: 55px;
+  // }
 }
 
 .header-nav {
   font-size: 18px;
-  line-height: 1.39em;
+  line-height: 1.39;
   letter-spacing: 0.1em;
 
   @media screen and (min-width: $tablet) {
     font-size: 12px;
-    line-height: 1.33em;
+    line-height: 1.33;
     letter-spacing: 0.1em;
   }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+
 }
 
 .nav-list {
@@ -89,6 +95,7 @@ p {
 .header-link {
   color: $primary-text-color;
   transition: all $animation-effect;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -117,7 +124,7 @@ p {
       justify-content: start;
       align-items: center;
 
-      @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
+      @media screen and (min-width: $tablet) and (max-width: 1278px) {
         li+li {
           margin-bottom: 20px;
         }
@@ -140,7 +147,7 @@ p {
   &__contacts-link {
     display: block;
     font-size: 14px;
-    line-height: 1.36em;
+    line-height: 1.36;
     letter-spacing: 0.2em;
     color: $primary-text-color;
 
@@ -152,7 +159,7 @@ p {
     @media screen and (min-width: $tablet) {
       color: $h2-alt-text-color;
       font-size: 12px;
-      line-height: 1.33em;
+      line-height: 1.33;
       letter-spacing: 0.1em;
     }
   }
@@ -163,17 +170,17 @@ p {
 
   font-weight: 600;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.38;
 
   letter-spacing: 0.1em;
-
+  z-index: 150;
 
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
     position: absolute;
-    left: 20%;
-    top: 50px;
+    left: 160px;
+    top: 52px;
     min-width: 610px;
   }
 }
@@ -185,7 +192,7 @@ p {
     transform: rotate(-90deg);
     background-color: $bg-color;
     position: absolute;
-    top: 70px;
+    top: 77px;
     left: -450px;
     z-index: 1;
 
@@ -197,10 +204,10 @@ p {
     padding-left: 40px;
   }
 
-  @media screen and (min-width: $desktop) {
-    padding-top: 100px;
-    padding-bottom: 40px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   padding-top: 100px;
+  //   padding-bottom: 40px;
+  // }
 }
 
 .header-soc {
@@ -231,9 +238,17 @@ p {
   }
 
   &__item {
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      cursor: pointer;
+    }
+
     &--line {
       position: relative;
       margin-left: 80px;
+      cursor: default;
 
       &::before {
         content: '';
@@ -267,9 +282,9 @@ p {
     left: 50px;
   }
 
-  @media screen and (min-width: $desktop) {
-    left: 80px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   left: 80px;
+  // }
 }
 
 .menu-container {
@@ -376,7 +391,7 @@ p {
 
   font-size: 10px;
   font-weight: 600;
-  line-height: 1.37em;
+  line-height: 1.37;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
@@ -419,7 +434,7 @@ p {
   @media screen and (min-width: $tablet) {
     max-width: 355px;
     padding-top: 272px;
-    // margin-left: 120px;
+    margin-left: 120px;
     // margin-top: 270px;
     // padding-bottom: 245px;
   }
@@ -431,13 +446,13 @@ p {
 
 .hero-info {
   font-size: 16px;
-  line-height: 1.62em;
+  line-height: 1.62;
   letter-spacing: 0.02em;
   color: #9da4bd;
 
   @media screen and (min-width: $desktop) {
     font-size: 18px;
-    line-height: 1.67em;
+    line-height: 1.67;
   }
 }
 
