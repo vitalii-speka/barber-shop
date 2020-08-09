@@ -823,75 +823,74 @@ h1, h2, p {
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
-  .aboutus {
-    justify-content: center;
-    padding-top: 84px;
-    padding-bottom: 84px;
-  }
-  .aboutus .aboutus-container {
-    display: flex;
-  }
-  .aboutus .text {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    color: #555555;
-    display: block;
-    max-width: 397px;
-  }
-  .aboutus .title {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 33px;
-    letter-spacing: 0.05em;
-    color: #303030;
-    max-width: 330px;
-    padding-bottom: 20px;
-  }
-  .aboutus .pretitle {
-    position: relative;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 15px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #303030;
-  }
-  .aboutus .pretitle::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 1px;
-    background-color: #303030;
-    transform: translateX(-80px) translateY(7px);
-  }
-  .aboutus .aboutus-text-container .button {
-    margin-top: 40px;
-  }
-  .aboutus .aboutus-text-container .pretitle {
-    padding-bottom: 20px;
-    padding-left: 80px;
-  }
-  .aboutus .aboutus-text-container .var-text {
-    padding-bottom: 20px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    color: #555555;
-  }
+.aboutus {
+  justify-content: center;
+  padding-top: 84px;
+  padding-bottom: 84px;
 }
+.aboutus .aboutus-container {
+  display: flex;
+}
+.aboutus .text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #555555;
+  display: block;
+  max-width: 397px;
+}
+.aboutus .title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  color: #303030;
+  max-width: 330px;
+  padding-bottom: 20px;
+}
+.aboutus .pretitle {
+  position: relative;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+}
+.aboutus .pretitle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  transform: translateX(-80px) translateY(7px);
+}
+.aboutus .aboutus-text-container .button {
+  margin-top: 40px;
+}
+.aboutus .aboutus-text-container .pretitle {
+  padding-bottom: 20px;
+  padding-left: 80px;
+}
+.aboutus .aboutus-text-container .var-text {
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
 @media screen and (min-width: 768px) {
   .aboutus {
     padding-top: 100px;
@@ -959,94 +958,93 @@ h1, h2, p {
     line-height: 30px;
   }
 }
-@media screen and (min-width: 480px) {
-  .pricelist {
-    padding-top: 84px;
-    padding-bottom: 84px;
-    background-image: url("/mob-prices-img.c1bb9c2e.png");
-    background-color: rgba(0, 0, 0, 0.9);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .pricelist-container .pretitle {
-    padding-bottom: 20px;
-    padding-left: 80px;
-    font-size: 11px;
-    line-height: 15px;
-    color: rgba(157, 164, 189, 0.6);
-    position: relative;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-  .pricelist-container .pretitle::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 1px;
-    background-color: rgba(157, 164, 189, 0.6);
-    transform: translateX(-80px) translateY(7px);
-  }
-  .pricelist-container .title {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 49px;
-    letter-spacing: 0.05em;
-    color: #ffffff;
-    max-width: 330px;
-    padding-bottom: 20px;
-    padding-bottom: 44px;
-  }
-  .pricelist-container .pricebox {
-    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-    margin-bottom: 50px;
-  }
-  .pricelist-container .first-pricebox {
-    padding: 30px 30px 0 30px;
-  }
-  .pricelist-container .second-pricebox {
-    padding: 0 30px 30px 30px;
-  }
-  .pricelist-container .button {
-    display: block;
-    color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .list-pricelist .item {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-  }
-  .list-pricelist .item :first-child {
-    padding-right: 5px;
-  }
-  .list-pricelist .item :last-child {
-    padding-left: 5px;
-  }
-  .list-pricelist .item .text {
-    min-width: max-content;
-    max-height: 25px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    color: #9da4bd;
-  }
-  .list-pricelist .item .text-line {
-    width: 100%;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.6);
-  }
+.pricelist {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-image: url("/mob-prices-img.c1bb9c2e.png");
+  background-color: rgba(0, 0, 0, 0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.pricelist-container .pretitle {
+  padding-bottom: 20px;
+  padding-left: 80px;
+  font-size: 11px;
+  line-height: 15px;
+  color: rgba(157, 164, 189, 0.6);
+  position: relative;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.pricelist-container .pretitle::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
+  transform: translateX(-80px) translateY(7px);
+}
+.pricelist-container .title {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  max-width: 330px;
+  padding-bottom: 20px;
+  padding-bottom: 44px;
+}
+.pricelist-container .pricebox {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  margin-bottom: 50px;
+}
+.pricelist-container .first-pricebox {
+  padding: 30px 30px 0 30px;
+}
+.pricelist-container .second-pricebox {
+  padding: 0 30px 30px 30px;
+}
+.pricelist-container .button {
+  display: block;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-pricelist .item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.list-pricelist .item :first-child {
+  padding-right: 5px;
+}
+.list-pricelist .item :last-child {
+  padding-left: 5px;
+}
+.list-pricelist .item .text {
+  min-width: max-content;
+  max-height: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+.list-pricelist .item .text-line {
+  width: 100%;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+}
+
 @media screen and (min-width: 768px) {
   .pricelist {
     padding-top: 100px;
@@ -1159,6 +1157,7 @@ h1, h2, p {
   font-size: 18px;
   line-height: 1.67;
   text-align: left;
+  margin: 0;
   letter-spacing: 0.02em;
   color: #555555;
   margin-bottom: 44px;
@@ -1212,6 +1211,60 @@ h1, h2, p {
   padding: 20px 30px;
 }
 
+@media screen and (max-width: 479px) {
+  .features-container {
+    padding: 0 31px;
+    max-width: 480px;
+  }
+
+  .features .item:nth-child(2n) {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .box-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .box-content {
+    padding: 10px 10px;
+  }
+
+  .features .item {
+    background: #f7f7f7;
+    max-width: 40%;
+    max-height: 134px;
+  }
+
+  .figure {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #303030;
+  }
+
+  .figure::after {
+    position: absolute;
+    content: "+";
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+    text-align: center;
+    color: #ff6c00;
+  }
+}
 @media screen and (min-width: 480px) {
   .features-container {
     padding: 0 31px;
@@ -1590,6 +1643,7 @@ h1, h2, p {
   .form-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
