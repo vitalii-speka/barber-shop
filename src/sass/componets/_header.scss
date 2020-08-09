@@ -54,7 +54,7 @@ p {
 
 .nav-list {
   @media screen and (max-width: $before-tablet) {
-    li + li {
+    li+li {
       margin-top: 24px;
     }
   }
@@ -65,7 +65,7 @@ p {
     margin-right: 5em;
     margin-left: 25px;
 
-    li + li {
+    li+li {
       margin-left: 30px;
     }
   }
@@ -111,7 +111,7 @@ p {
     @media screen and (max-width: $before-tablet) {
       margin-top: 64px;
 
-      li + li {
+      li+li {
         margin-top: 24px;
       }
     }
@@ -122,10 +122,10 @@ p {
 
       justify-content: start;
       align-items: center;
-      margin-left: 250px;
+      // margin-left: 250px;
 
       @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
-        li + li {
+        li+li {
           margin-bottom: 20px;
         }
       }
@@ -138,7 +138,7 @@ p {
 
       flex-direction: row;
 
-      li + li {
+      li+li {
         margin-left: 40px;
       }
     }
@@ -221,7 +221,7 @@ p {
     @media screen and (max-width: $before-tablet) {
       margin-top: 50px;
 
-      li + li {
+      li+li {
         margin-top: 24px;
       }
     }
@@ -231,13 +231,14 @@ p {
       color: $primary-text-color;
       display: flex;
 
-      li + li {
+      li+li {
         margin-left: 40px;
       }
     }
   }
 
   &__item {
+
     &:hover,
     &:focus {
       color: $accent-color;
@@ -465,8 +466,8 @@ p {
     margin-right: auto;
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       background-image: url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
     }
   }
