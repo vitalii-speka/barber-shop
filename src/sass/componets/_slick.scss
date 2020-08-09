@@ -9,7 +9,8 @@ body {
 .slider {
     position: relative;
     overflow: hidden;
-    max-width: 1125px;
+    min-width: 1125px;
+    min-height: 680px;
     margin-left: 160px;
     // margin-right: auto;
 
@@ -68,13 +69,22 @@ body {
 }
 
 .slider__control_prev {
-    left: 75%;
+    left: 60%;
     top: 97%;
+
+    @media screen and (min-width: $desktop) {
+        left: 75%;
+    }
 }
 
 .slider__control_next {
-    right: 5%;
+    right: 25%;
     top: 97%;
+
+    @media screen and (min-width: $desktop) {
+        right: 15%;
+    }
+
 }
 
 .slider__control::before {
@@ -138,7 +148,7 @@ body {
     // justify-content: center;
     padding-left: 0;
     margin-right: 15%;
-    margin-left: 90%;
+    margin-left: 75%;
     list-style: none;
     margin-top: 0;
     margin-bottom: 25%;
