@@ -3,7 +3,7 @@
   <header class="page-header">
     <a href="./">
       <svg width="69" height="55" class="logo">
-       <use href="./images/svg/sprite.svg#logo"></use>
+        <use href="./images/svg/sprite.svg#logo"></use>
       </svg>
     </a>
 
@@ -12,35 +12,43 @@
       aria-expanded="false"
       aria-controls="menu-container"
       data-menu-button
-      data-modal>
+      data-modal
+    >
       <svg
         width="24"
         height="20"
         aria-label="Переключатель мобильного меню"
-        class="drop-down-icon">
-        
+        class="drop-down-icon"
+      >
         <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
         <use class="icon-cross" href="./images/svg/sprite.svg#icon-close"></use>
       </svg>
     </button>
-         
+
     <div class="menu-container" id="menu-container" data-menu>
       <div class="header-container">
         <nav class="header-nav">
           <ul class="nav-list">
-            <li><a class="header-link">О нас</a></li>
-            <li class="nav_item"><a class="header-link">Услуги и цены</a></li>
-            <li><a class="header-link">Мастера</a></li>
-            <li><a class="header-link">Контакты</a></li>
+            <li><a href="#aboutus" class="header-link">О нас</a></li>
+            <li class="nav_item">
+              <a href="#pricelist" class="header-link">Услуги и цены</a>
+            </li>
+            <li><a href="#masters" class="header-link">Мастера</a></li>
+            <li><a href="#address" class="header-link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="header__conacts-list">
           <li class="header__contacts-item">
             <a href="tel:+380441111111" class="header__contacts-link"
-              >+38 044 111 11 11</a>
+              >+38 044 111 11 11</a
+            >
           </li>
-          <li><button class="button">онлайн-запись</button></li>
+          <li>
+            <a href="#online-check-in" class="button">
+              онлайн-запись
+            </a>
+          </li>
         </ul>
       </div>
 

@@ -4,11 +4,19 @@
       <div class="aboutus-image-container-tablet">
         <img
           class="image"
+          srcset="
+            ./images/section-1-best-barber/tabl-best-barber-img-1.jpg,
+            ./images/section-1-best-barber/tabl-best-barber-img-1@2x.jpg 2x
+          "
           src="./images/section-1-best-barber/tabl-best-barber-img-1.jpg"
           alt=""
         />
         <img
           class="image"
+          srcset="
+            ./images/section-1-best-barber/tabl-best-barber-img-2.jpg    1x,
+            ./images/section-1-best-barber/tabl-best-barber-img-2@2x.jpg 2x
+          "
           src="./images/section-1-best-barber/tabl-best-barber-img-2.jpg"
           alt=""
         />
@@ -16,17 +24,25 @@
       <div class="aboutus-image-container-desktop">
         <img
           class="image"
+          srcset="
+            ./images/section-1-best-barber/desk-best-barber-img-1.jpg    1x,
+            ./images/section-1-best-barber/desk-best-barber-img-1@2x.jpg 2x
+          "
           src="./images/section-1-best-barber/desk-best-barber-img-1.jpg"
           alt=""
         />
         <img
           class="image"
+          srcset="
+            ./images/section-1-best-barber/desk-best-barber-img-2.jpg    1x,
+            ./images/section-1-best-barber/desk-best-barber-img-2@2x.jpg 2x
+          "
           src="./images/section-1-best-barber/desk-best-barber-img-2.jpg"
           alt=""
         />
       </div>
       <div class="aboutus-text-container">
-        <h3 class="text pretitle">О НАС</h3>
+        <h3 id="aboutus" class="text pretitle">О НАС</h3>
         <h2 class="title">Лучший Барбершоп твоего города</h2>
         <p class="text var-text">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
@@ -39,7 +55,9 @@
           волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
           приходит!
         </p>
-        <button class="button" data-modal-open>ОНЛАЙН-ЗАПИСЬ</button>
+        <a href="#online-check-in" class="button">
+          онлайн-запись
+        </a>
       </div>
     </div>
   </section>
