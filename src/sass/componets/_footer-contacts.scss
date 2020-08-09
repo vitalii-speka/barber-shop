@@ -87,6 +87,7 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   cursor: pointer;
+  transition: all $animation-effect;
 
   color: $price-alt-text-color;
 
@@ -96,16 +97,17 @@
 }
 
 .address-list-item {
-  transition: all $animation-effect;
-
   &:hover .links {
     color: $accent-color;
   }
 }
 
+.address-svg {
+  transition: all $animation-effect;
+}
+
 .address-list-item {
   fill: transparent;
-  transition: all $animation-effect;
 
   &:hover .address-svg {
     fill: $accent-color;
