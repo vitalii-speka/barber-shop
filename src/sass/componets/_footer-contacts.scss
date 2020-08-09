@@ -96,6 +96,8 @@
 }
 
 .address-list-item {
+  transition: all $animation-effect;
+
   &:hover .links {
     color: $accent-color;
   }
@@ -103,6 +105,8 @@
 
 .address-list-item {
   fill: transparent;
+  transition: all $animation-effect;
+
   &:hover .address-svg {
     fill: $accent-color;
   }

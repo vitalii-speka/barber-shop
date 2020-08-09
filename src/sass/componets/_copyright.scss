@@ -59,6 +59,7 @@
 
 .social-networks-name {
   color: $primary-text-color;
+  transition: all $animation-effect;
 
   &:hover,
   &:focus {
