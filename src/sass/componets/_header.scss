@@ -125,7 +125,7 @@ p {
     }
 
     @media screen and (min-width: $desktop) {
-      margin-left: 300px;
+      margin-left: 250px;
       align-items: baseline;
       justify-content: space-evenly;
 
@@ -345,6 +345,13 @@ p {
 
 .hero {
   border: 1px solid red;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 159px;
+  }
 }
 
 .hero-title {
@@ -352,13 +359,13 @@ p {
 
   font-family: $font-family;
   font-size: 48px;
-  line-height: 1.17em;
+  line-height: 1.16;
   letter-spacing: 0.05em;
   color: $bg-color;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $desktop) {
     font-size: 72px;
-    line-height: 1.18em;
+    line-height: 1.18;
   }
 }
 
@@ -390,27 +397,31 @@ p {
 }
 
 .container--hero {
-  padding-left: 31px;
+  // padding-left: 31px;
 
   @media screen and (max-width: $before-tablet) {
+
     max-width: 310px;
     padding-top: 110px;
-    padding-bottom: 180px;
+    // padding-bottom: 180px;
+    margin-left: 120px;
+    padding-top: 150px;
   }
 
-  @media screen and (min-width: 520px) and(max-width:600px) {
-    margin-left: 50px;
-  }
+  // @media screen and (min-width: 520px) and(max-width:600px) {
+  //   margin-left: 50px;
+  // }
 
-  @media screen and (min-width: 601px) and(max-width:$before-tablet) {
-    margin-left: 80px;
-  }
+  // @media screen and (min-width: 601px) and(max-width:$before-tablet) {
+  //   margin-left: 80px;
+  // }
 
   @media screen and (min-width: $tablet) {
     max-width: 355px;
-    margin-left: 120px;
-    margin-top: 270px;
-    padding-bottom: 245px;
+    padding-top: 272px;
+    // margin-left: 120px;
+    // margin-top: 270px;
+    // padding-bottom: 245px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -432,11 +443,12 @@ p {
 
 .hero-overlay {
   border: 1px solid red;
+
   // position: relative;
 
   @media screen and (max-width: $before-tablet) {
     max-width: 1125px;
-    max-height: 680px;
+    min-height: 680px;
     margin-left: auto;
     background-image: url(..//images/header-slider/mobile-slider-img-3.jpg);
     background-color: $primary-text-color;
