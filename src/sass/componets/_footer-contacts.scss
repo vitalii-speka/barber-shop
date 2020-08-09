@@ -102,6 +102,7 @@
 }
 
 .address-list-item {
+  fill: transparent;
   &:hover .address-svg {
     fill: $accent-color;
   }
