@@ -6,20 +6,18 @@ h1, h2, p {
 .page-header {
     background-color: transparent;
     align-items: center;
-
+    padding-left: 20px;
+    padding-right: 20px;
 
         @media screen and (max-width: $before-tablet) {
             position: relative;
             padding-top: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
+
         }
 
         @media screen and (min-width: $tablet) {
             padding-top: 40px;
-            padding-left: 39px;
-            padding-right: 39px;
-
+            padding-left: 0;
             color: $h2-alt-text-color;
 
         }
@@ -52,16 +50,16 @@ h1, h2, p {
 
     @media screen and (min-width: $tablet) {
         display: flex;
-        margin-right: 20px;
+        // margin-right: 20px;
         li + li {
             margin-left: 24px;
         }
     }
 
 
-@media screen and (min-width: $desktop) {
-    margin-right: 240px;
-}
+// @media screen and (min-width: $desktop) {
+//     margin-right: 240px;
+// }
 }
 
 .header-link {
@@ -142,7 +140,7 @@ h1, h2, p {
         display: flex;
         justify-content: space-between;
         min-width: 500px;
-        padding-left: 175px;
+        padding-left: 155px;
     }
 }
 
