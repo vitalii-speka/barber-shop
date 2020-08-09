@@ -23,7 +23,7 @@
 
   @media screen and (min-width: 1280px) {
     min-width: 50%;
-    padding: 130px 55px;
+    padding: 130px 40px 130px 55px;
   }
 }
 
@@ -104,7 +104,7 @@
   @media screen and (min-width: 1280px) {
     &:not(:last-child) {
       // display: flex;
-      min-inline-size: 270px;
+      min-inline-size: 250px;
     }
 
     &:last-child {
