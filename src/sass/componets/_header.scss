@@ -1,4 +1,6 @@
-h1, h2, p {
+h1,
+h2,
+p {
     margin: 0;
     padding: 0;
 }
@@ -9,26 +11,27 @@ h1, h2, p {
     padding-left: 20px;
     padding-right: 20px;
 
-        @media screen and (max-width: $before-tablet) {
-            position: relative;
-            padding-top: 30px;
+    @media screen and (max-width: $before-tablet) {
+        position: relative;
+        padding-top: 30px;
 
-        }
+    }
 
-        @media screen and (min-width: $tablet) {
-            padding-top: 40px;
-            padding-left: 0;
-            color: $h2-alt-text-color;
+    @media screen and (min-width: $tablet) {
+        padding-top: 40px;
+        padding-left: 0;
+        color: $h2-alt-text-color;
 
-        }
+    }
 
-        @media screen and (min-width: $desktop) {
-            padding-top: 40px;
-            padding-left: 55px;
-            padding-right: 55px;
-        }
+    @media screen and (min-width: $desktop) {
+        padding-top: 40px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
 
 }
+
 .header-nav {
     font-size: 18px;
     line-height: 1.39em;
@@ -36,30 +39,31 @@ h1, h2, p {
 
     @media screen and (min-width: $tablet) {
         font-size: 12px;
-    line-height: 1.33em;
-    letter-spacing: 0.1em;
+        line-height: 1.33em;
+        letter-spacing: 0.1em;
     }
 }
 
-.nav-list{
+.nav-list {
     @media screen and (max-width: $before-tablet) {
-        li + li {
+        li+li {
             margin-top: 24px;
         }
     }
 
     @media screen and (min-width: $tablet) {
         display: flex;
+
         // margin-right: 20px;
-        li + li {
+        li+li {
             margin-left: 24px;
         }
     }
 
 
-// @media screen and (min-width: $desktop) {
-//     margin-right: 240px;
-// }
+    // @media screen and (min-width: $desktop) {
+    //     margin-right: 240px;
+    // }
 }
 
 .header-link {
@@ -67,7 +71,8 @@ h1, h2, p {
     transition: all $animation-effect;
     cursor: pointer;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $accent-color;
     }
 
@@ -76,16 +81,16 @@ h1, h2, p {
     }
 }
 
-.header
-{
+.header {
     &__conacts-list {
         @media screen and (max-width: $before-tablet) {
             margin-top: 64px;
 
-        li + li {
-            margin-top: 24px;
+            li+li {
+                margin-top: 24px;
+            }
         }
-        }
+
         @media screen and (min-width: $tablet) {
             display: flex;
             flex-direction: column-reverse;
@@ -95,45 +100,47 @@ h1, h2, p {
 
             margin-top: -10px;
 
-            @media screen and (min-width: $tablet) and (max-width: $before-desktop){
-                li + li {
+            @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
+                li+li {
                     margin-bottom: 20px;
                 }
             }
         }
 
-            @media screen and (min-width: $desktop) {
-                margin-left: 20px;
-                align-items: baseline;
+        @media screen and (min-width: $desktop) {
+            margin-left: 20px;
+            align-items: baseline;
 
 
-                flex-direction: row;
+            flex-direction: row;
 
-                li + li {
-                    margin-left: 40px;
-                }
+            li+li {
+                margin-left: 40px;
             }
         }
+    }
 
     &__contacts-link {
         display: block;
-    font-size: 14px;
-    line-height: 1.36em;
-    letter-spacing: 0.2em;
-    color: $primary-text-color;
+        font-size: 14px;
+        line-height: 1.36em;
+        letter-spacing: 0.2em;
+        color: $primary-text-color;
 
-    &:hover, &:focus {
-        color: $accent-color;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
+
+        @media screen and (min-width: $tablet) {
+            color: $h2-alt-text-color;
+            font-size: 12px;
+            line-height: 1.33em;
+            letter-spacing: 0.1em;
+        }
     }
-
-
-    @media screen and (min-width: $tablet) {
-        color: $h2-alt-text-color;
-        font-size: 12px;
-    line-height: 1.33em;
-    letter-spacing: 0.1em;
-    }
-}}
+}
 
 .header-container {
     @media screen and (min-width: $tablet) {
@@ -162,6 +169,7 @@ h1, h2, p {
     }
 
 }
+
 .header-soc {
 
     &__list {
@@ -174,7 +182,7 @@ h1, h2, p {
         @media screen and (max-width: $before-tablet) {
             margin-top: 50px;
 
-            li + li {
+            li+li {
                 margin-top: 24px;
             }
         }
@@ -185,17 +193,20 @@ h1, h2, p {
             color: $primary-text-color;
             transition: all $animation-effect;
 
-            li + li {
+            li+li {
                 margin-left: 40px;
             }
         }
     }
 
     &__item {
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             color: $accent-color;
             cursor: pointer;
         }
+
         &--line {
             position: relative;
             margin-left: 80px;
@@ -206,14 +217,15 @@ h1, h2, p {
                 background-color: rgba(157, 164, 189, 0.6);
 
                 width: 60px;
-            height: 1px;
-            top: 8px;
-            left: -80px;
+                height: 1px;
+                top: 8px;
+                left: -80px;
 
-            cursor: default;
+                cursor: default;
             }
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 color: $accent-color;
                 cursor: pointer;
             }
@@ -223,7 +235,7 @@ h1, h2, p {
     .youtube {
         @media screen and (max-width: $before-tablet) {
             display: block;
-        padding-left: 80px;
+            padding-left: 80px;
         }
     }
 }
@@ -231,17 +243,18 @@ h1, h2, p {
 .logo {
     fill: $bg-color;
 
-@media screen and (min-width: $tablet){
-    fill: $primary-text-color;
-    z-index: 2;
-    position: absolute;
-    top: 30px;
-    left: 50px;
-}
+    @media screen and (min-width: $tablet) {
+        fill: $primary-text-color;
+        z-index: 2;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    }
 }
 
 .menu-container {
     background-color: transparent;
+
     @media screen and (max-width: $before-tablet) {
 
         display: none;
@@ -260,37 +273,38 @@ h1, h2, p {
             display: block;
             overflow: hidden;
             transform-origin: top;
-    transform: scaleY(1);
-    transition: transform $animation-effect;
+            transform: scaleY(1);
+            transition: transform $animation-effect;
         }
     }
 }
 
 .drop-button {
     @media screen and (max-width: $before-tablet) {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background-color: transparent;
-    outline: none;
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: transparent;
+        outline: none;
 
-    display: inline-flex;
-    align-items: center;
-    margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        margin-left: auto;
 
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    z-index: 5;
-}
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        z-index: 5;
+    }
 
     @media screen and (min-width: $tablet) {
         display: none;
-      }
+    }
 
-      .icon-cross {
+    .icon-cross {
         display: none;
     }
+
     &.is-open .icon-cross {
         display: block;
     }
@@ -299,16 +313,16 @@ h1, h2, p {
         display: none;
     }
 
-  }
+}
 
-  .drop-down-icon .icon-menu {
+.drop-down-icon .icon-menu {
     fill: white;
 
     @media screen and (min-width: $before-tablet) {
-      display: none;
+        display: none;
 
     }
-  }
+}
 
 //   Hero section
 
@@ -346,11 +360,12 @@ h1, h2, p {
         width: 60px;
         height: 1px;
         top: 8px;
-        left: -80px;}
+        left: -80px;
+    }
 
-        @media screen and (min-width:$tablet) {
-            font-size: 11px;
-        }
+    @media screen and (min-width:$tablet) {
+        font-size: 11px;
+    }
 }
 
 .container--hero {
@@ -362,12 +377,12 @@ h1, h2, p {
         padding-bottom: 180px;
     }
 
-    @media screen and (min-width:520px) and(max-width:600px){
+    @media screen and (min-width:520px) and(max-width:600px) {
         margin-left: 50px;
     }
 
-    @media screen and (min-width:601px) and(max-width:$before-tablet){
-       margin-left: 80px;
+    @media screen and (min-width:601px) and(max-width:$before-tablet) {
+        margin-left: 80px;
     }
 
     @media screen and (min-width:$tablet) {
@@ -392,54 +407,55 @@ h1, h2, p {
 
     @media screen and (min-width:$desktop) {
         font-size: 18px;
-    line-height: 1.67em;
+        line-height: 1.67em;
     }
 }
 
 .hero-overlay {
     max-height: 680px;
     margin-right: auto;
-  margin-left: auto;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    url(..//images/header-slider/mobile-slider-img-3.jpg);
+    margin-left: auto;
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+        url(..//images/header-slider/mobile-slider-img-3.jpg);
     background-color: $primary-text-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-  @media screen and (max-width: $before-tablet){
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-      url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
-    }
-  }
-
-
-      @media screen and (min-width: $tablet) {
-        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-        url(..//images/header-slider/tabl-slider-img-3.jpg);
+    @media screen and (max-width: $before-tablet) {
 
         @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-      url(..//images/header-slider/tabl-slider-img-3@2x.jpg);
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+                url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
+        }
     }
-      }
 
-      @media screen and (min-width: $desktop) {
+
+    @media screen and (min-width: $tablet) {
         background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-        url(..//images/header-slider/desk-slider-img-3.jpg);
+            url(..//images/header-slider/tabl-slider-img-3.jpg);
 
         @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-      url(..//images/header-slider/desk-slider-img-3@2x.jpg);
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+                url(..//images/header-slider/tabl-slider-img-3@2x.jpg);
+        }
     }
-      }
+
+    @media screen and (min-width: $desktop) {
+        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+            url(..//images/header-slider/desk-slider-img-3.jpg);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+                url(..//images/header-slider/desk-slider-img-3@2x.jpg);
+        }
+    }
 }
 
 
@@ -455,8 +471,146 @@ h1, h2, p {
     opacity: 1;
 
     &.is-hidden {
-      opacity: 0;
-      overflow: hidden;
-      pointer-events: none;
+        opacity: 0;
+        overflow: hidden;
+        pointer-events: none;
     }
-  }
+}
+
+/* button*/
+
+.button-sl {
+    border: none;
+    display: inline-block;
+    // padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    color: rgba(157, 164, 189, 0.6);
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.button-sl:hover,
+.button-sl:focus,
+.button-sl:active {
+    color: $bg-color-second;
+    outline: none;
+}
+
+.prev-button {
+    text-align: start;
+    position: absolute;
+
+    transform: translate(0%, -50%);
+    z-index: 3;
+
+    @media screen and (min-width: 768px) {
+        right: 119px;
+        bottom: 280px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        right: 141px;
+        bottom: 280px;
+    }
+}
+
+.next-button {
+    text-align: end;
+    position: absolute;
+
+    transform: translate(0%, -50%);
+    z-index: 3;
+
+    @media screen and (min-width: 768px) {
+        right: 33px;
+        bottom: 280px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        right: 55px;
+        bottom: 280px;
+    }
+}
+
+.prev-button:after,
+.next-button:after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    display: block;
+    cursor: pointer;
+    bottom: 0;
+    margin-top: 8px;
+    background-color: rgba(157, 164, 189, 0.6);
+    background-size: auto;
+}
+
+.prev-button:hover:after,
+.prev-button:focus:after {
+    background-color: $bg-color-second;
+}
+
+.next-button:hover:after,
+.next-button:focus:after {
+    background-color: $bg-color-second;
+}
+
+/* дот-линии*/
+.nav-dots {
+    position: absolute;
+    top: 40%;
+
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 40px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        right: 39px;
+    }
+
+    @media screen and (min-width: 768px) {
+        right: 55px;
+    }
+}
+
+.nav-dot {
+    display: block;
+    width: 8px;
+    height: 2px;
+    background: $bg-color-second;
+    cursor: pointer;
+}
+
+.nav-dot:not(:first-child) {
+    margin-top: 12px;
+}
+
+.nav-dot.active {
+    background: $bg-color-second;
+    width: 18px;
+}
