@@ -24,6 +24,19 @@ body {
 
 }
 
+.slider-tablet {
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.slider-desktop {
+    @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
+        display: none;
+    }
+}
+
+
 /* стили для обёртки, в которой заключены слайды */
 .slider__wrapper {
     position: relative;
