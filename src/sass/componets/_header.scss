@@ -412,50 +412,52 @@ p {
   }
 }
 
-// .hero-overlay {
-//   // position: relative;
+.hero-overlay {
+  // position: relative;
 
-//   max-width: 1125px;
-//   max-height: 680px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   // background-image:
-//   //     url(..//images/header-slider/mobile-slider-img-3.jpg);
-//   background-color: $primary-text-color;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
 
-//   @media screen and (max-width: $before-tablet) {
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
-//     }
-//   }
+  @media screen and (max-width: $before-tablet) {
+    max-width: 1125px;
+    max-height: 680px;
+    margin-left: auto;
+    background-image: url(..//images/header-slider/mobile-slider-img-3.jpg);
+    background-color: $primary-text-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-//   @media screen and (min-width: $tablet) {
-//     margin-left: 160px;
-//     background-image: url(..//images/header-slider/tabl-slider-img-3.jpg);
+    margin-right: auto;
 
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url(..//images/header-slider/tabl-slider-img-3@2x.jpg);
-//     }
-//   }
 
-//   @media screen and (min-width: $desktop) {
-//     margin-left: 250px;
-//     background-image: url(..//images/header-slider/desk-slider-img-3.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
+    }
+  }
 
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: url(..//images/header-slider/desk-slider-img-3@2x.jpg);
-//     }
-//   }
-// }
+  //   @media screen and (min-width: $tablet) {
+  //     margin-left: 160px;
+  //     background-image: url(..//images/header-slider/tabl-slider-img-3.jpg);
+
+  //     @media screen and (min-device-pixel-ratio: 2),
+  //       screen and (min-resolution: 192dpi),
+  //       screen and (min-resolution: 2dppx) {
+  //       background-image: url(..//images/header-slider/tabl-slider-img-3@2x.jpg);
+  //     }
+  //   }
+
+  //   @media screen and (min-width: $desktop) {
+  //     margin-left: 250px;
+  //     background-image: url(..//images/header-slider/desk-slider-img-3.jpg);
+
+  //     @media screen and (min-device-pixel-ratio: 2),
+  //       screen and (min-resolution: 192dpi),
+  //       screen and (min-resolution: 2dppx) {
+  //       background-image: url(..//images/header-slider/desk-slider-img-3@2x.jpg);
+  //     }
+  //   }
+}
 
 .backdrop {
   position: fixed;

@@ -12,6 +12,11 @@ body {
     max-width: 1125px;
     margin-left: auto;
     // margin-right: auto;
+
+    @media screen and (max-width: $before-tablet) {
+        display: none;
+    }
+
 }
 
 /* стили для обёртки, в которой заключены слайды */
@@ -39,13 +44,15 @@ body {
     display: none;
     align-items: center;
     justify-content: center;
-    width: 40px;
+    width: 60px;
     color: #fff;
     text-align: center;
     opacity: 0.5;
     height: 50px;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    color: rgba(157, 164, 189, 0.6);
+    ;
+    // background: rgba(0, 0, 0, 0.5);
 }
 
 .slider__control_show {
@@ -54,7 +61,7 @@ body {
 
 .slider__control:hover,
 .slider__control:focus {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     outline: 0;
     opacity: 0.9;
@@ -62,29 +69,60 @@ body {
 
 .slider__control_prev {
     left: 80%;
-    top: 90%;
+    top: 97%;
 }
 
 .slider__control_next {
     right: 5%;
-    top: 90%;
+    top: 97%;
 }
 
 .slider__control::before {
     content: '';
     display: inline-block;
-    width: 60px;
+    width: 24px;
     height: 60px;
-    background: transparent no-repeat center center;
+    // background: transparent no-repeat center center;
     background-size: 100% 100%;
+
+    font-family: $font-family-open-sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
 }
 
 .slider__control_prev::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    content: 'Назад';
 }
 
+.slider__control_prev::after {
+    position: absolute;
+    background-color: rgba(157, 164, 189, 0.6);
+    ;
+    content: '';
+    width: 60px;
+    height: 1px;
+    top: 20px;
+    left: 8px;
+}
+
+
 .slider__control_next::before {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    content: 'Вперед';
+    text-align: right;
+}
+
+.slider__control_next::after {
+    position: absolute;
+    background-color: rgba(157, 164, 189, 0.6);
+    ;
+    content: '';
+    width: 60px;
+    height: 1px;
+    top: 20px;
+    left: 8px;
 }
 
 /* стили для индикаторов */
@@ -120,7 +158,7 @@ body {
 }
 
 .slider__indicators li.active {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 18px;
 
 }
