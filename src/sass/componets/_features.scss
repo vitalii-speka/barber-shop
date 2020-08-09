@@ -1,3 +1,9 @@
+.features-container {
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .old-school {
   display: inline-block;
   margin-left: 80px;
@@ -104,11 +110,12 @@
   color: #303030;
 }
 
+.box-content {
+  padding: 20px 30px;
+}
+
 @media screen and (min-width: $mobile) {
   .features-container {
-    background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
     padding: 0 31px;
     max-width: $mobile;
   }
