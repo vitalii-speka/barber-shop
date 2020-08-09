@@ -6,7 +6,7 @@ p {
 }
 
 .page-header {
-  border: 1px solid blue;
+  //   border: 1px solid blue;
 
   background-color: transparent;
 
@@ -50,12 +50,11 @@ p {
     display: flex;
     align-items: center;
   }
-
 }
 
 .nav-list {
   @media screen and (max-width: $before-tablet) {
-    li+li {
+    li + li {
       margin-top: 24px;
     }
   }
@@ -66,7 +65,7 @@ p {
     margin-right: 5em;
     margin-left: 25px;
 
-    li+li {
+    li + li {
       margin-left: 30px;
     }
   }
@@ -109,11 +108,10 @@ p {
 
 .header {
   &__conacts-list {
-
     @media screen and (max-width: $before-tablet) {
       margin-top: 64px;
 
-      li+li {
+      li + li {
         margin-top: 24px;
       }
     }
@@ -127,7 +125,7 @@ p {
       margin-left: 250px;
 
       @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
-        li+li {
+        li + li {
           margin-bottom: 20px;
         }
       }
@@ -140,11 +138,10 @@ p {
 
       flex-direction: row;
 
-      li+li {
+      li + li {
         margin-left: 40px;
       }
     }
-
   }
 
   &__contacts-link {
@@ -169,7 +166,7 @@ p {
 }
 
 .header-container {
-  border: 1px solid red;
+  //   border: 1px solid red;
 
   font-weight: 600;
   font-size: 18px;
@@ -189,7 +186,7 @@ p {
 }
 
 .soc-container {
-  border: 1px solid blue;
+  //   border: 1px solid blue;
 
   @media screen and (min-width: $tablet) {
     transform: rotate(-90deg);
@@ -224,7 +221,7 @@ p {
     @media screen and (max-width: $before-tablet) {
       margin-top: 50px;
 
-      li+li {
+      li + li {
         margin-top: 24px;
       }
     }
@@ -234,14 +231,13 @@ p {
       color: $primary-text-color;
       display: flex;
 
-      li+li {
+      li + li {
         margin-left: 40px;
       }
     }
   }
 
   &__item {
-
     &:hover,
     &:focus {
       color: $accent-color;
@@ -362,7 +358,7 @@ p {
 //   Hero section
 
 .hero {
-  border: 1px solid red;
+  //   border: 1px solid red;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -452,7 +448,7 @@ p {
 }
 
 .hero-overlay {
-  border: 1px solid red;
+  //   border: 1px solid red;
 
   // position: relative;
 
@@ -469,8 +465,8 @@ p {
     margin-right: auto;
 
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
       background-image: url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
     }
   }
@@ -510,7 +506,7 @@ p {
     0px 1px 3px rgba(0, 0, 0, 0.16);
   opacity: 1;
 
-  border: 1px solid blue;
+  //   border: 1px solid blue;
 
   &.is-hidden {
     opacity: 0;
