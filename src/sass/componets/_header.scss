@@ -523,13 +523,13 @@ p {
     z-index: 3;
 
     @media screen and (min-width: 768px) {
-        right: 119px;
-        bottom: 280px;
+        right: 125px;
+        bottom: 100px;
     }
 
     @media screen and (min-width: 1280px) {
         right: 141px;
-        bottom: 280px;
+        bottom: 70px;
     }
 }
 
@@ -541,13 +541,13 @@ p {
     z-index: 3;
 
     @media screen and (min-width: 768px) {
-        right: 33px;
-        bottom: 280px;
+        right: 40px;
+        bottom: 100px;
     }
 
     @media screen and (min-width: 1280px) {
         right: 55px;
-        bottom: 280px;
+        bottom: 70px;
     }
 }
 
@@ -615,4 +615,8 @@ p {
 .nav-dot.active {
     background: $bg-color-second;
     width: 18px;
+}
+
+.hero {
+    position: relative;
 }
