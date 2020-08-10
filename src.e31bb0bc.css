@@ -717,6 +717,8 @@ p {
 
 .container--hero {
   padding-left: 31px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 @media screen and (max-width: 767px) {
   .container--hero {
@@ -857,14 +859,14 @@ p {
 }
 @media screen and (min-width: 768px) {
   .prev-button {
-    right: 119px;
-    bottom: 280px;
+    right: 125px;
+    bottom: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
   .prev-button {
     right: 141px;
-    bottom: 280px;
+    bottom: 70px;
   }
 }
 
@@ -876,14 +878,14 @@ p {
 }
 @media screen and (min-width: 768px) {
   .next-button {
-    right: 33px;
-    bottom: 280px;
+    right: 40px;
+    bottom: 100px;
   }
 }
 @media screen and (min-width: 1280px) {
   .next-button {
     right: 55px;
-    bottom: 280px;
+    bottom: 70px;
   }
 }
 
@@ -953,6 +955,10 @@ p {
 .nav-dot.active {
   background: #f7f7f7;
   width: 18px;
+}
+
+.hero {
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -1750,7 +1756,7 @@ p {
 @media screen and (min-width: 1280px) {
   .footer-content {
     min-width: 50%;
-    padding: 130px 40px 130px 55px;
+    padding: 90px 40px 130px 55px;
   }
 }
 
@@ -1830,6 +1836,7 @@ p {
 .form-input {
   width: 100%;
   color: #ffffff;
+  background-color: #191c26;
   padding-left: 80px;
   padding-bottom: 5px;
   font-size: 11px;
