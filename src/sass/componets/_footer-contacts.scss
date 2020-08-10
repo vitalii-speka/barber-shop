@@ -12,7 +12,10 @@
   background-position: center;
   background-size: cover;
   background-color: $bg-color-footer;
-
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   @media screen and (min-width: $desktop) {
     padding-left: 100px;
     padding-top: 130px;
@@ -52,7 +55,6 @@
 
 .address {
   width: 100%;
-
   @media screen and (min-width: $tablet) {
     max-width: 330px;
   }
@@ -72,7 +74,9 @@
       margin-bottom: 20px;
     }
   }
-
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
   @media screen and (min-width: $desktop) {
     margin: 0 0 70px 0;
   }

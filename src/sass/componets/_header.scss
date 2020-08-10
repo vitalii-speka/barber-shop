@@ -1,622 +1,645 @@
 h1,
 h2,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .page-header {
-    background-color: transparent;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+  background-color: transparent;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    @media screen and (max-width: $before-tablet) {
-        position: relative;
-        padding-top: 30px;
+  @media screen and (max-width: $before-tablet) {
+    position: relative;
+    padding-top: 30px;
+  }
 
-    }
+  @media screen and (min-width: $tablet) {
+    padding-top: 52px;
+    padding-left: 0;
+    color: $h2-alt-text-color;
+  }
 
-    @media screen and (min-width: $tablet) {
-        padding-top: 40px;
-        padding-left: 0;
-        color: $h2-alt-text-color;
-
-    }
-
-    @media screen and (min-width: $desktop) {
-        padding-top: 40px;
-        padding-left: 55px;
-        padding-right: 55px;
-    }
-
+  @media screen and (min-width: $desktop) {
+    padding-top: 40px;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
 
 .header-nav {
-    font-size: 18px;
-    line-height: 1.39em;
-    letter-spacing: 0.1em;
+  font-size: 18px;
+  line-height: 1.39em;
+  letter-spacing: 0.1em;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 12px;
-        line-height: 1.33em;
-        letter-spacing: 0.1em;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.33em;
+    letter-spacing: 0.1em;
+  }
 }
 
 .nav-list {
-    @media screen and (max-width: $before-tablet) {
-        li+li {
-            margin-top: 24px;
-        }
+  @media screen and (max-width: $before-tablet) {
+    li + li {
+      margin-top: 24px;
     }
+  }
 
-    @media screen and (min-width: $tablet) {
-        display: flex;
-
-        // margin-right: 20px;
-        li+li {
-            margin-left: 24px;
-        }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    // margin-right: 20px;
+    li + li {
+      margin-left: 24px;
     }
+  }
 
-
-    // @media screen and (min-width: $desktop) {
-    //     margin-right: 240px;
-    // }
+  // @media screen and (min-width: $desktop) {
+  //     margin-right: 240px;
+  // }
 }
 
 .header-link {
-    color: $primary-text-color;
-    transition: all $animation-effect;
-    cursor: pointer;
+  font-family: $font-family-open-sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: $primary-text-color;
+  transition: all $animation-effect;
+  cursor: pointer;
 
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 
-    @media screen and (min-width: $tablet) {
-        color: $h2-alt-text-color;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 16px;
+    color: $h2-alt-text-color;
+  }
 }
 
 .header {
-    &__conacts-list {
-        @media screen and (max-width: $before-tablet) {
-            margin-top: 64px;
+  &__conacts-list {
+    @media screen and (max-width: $before-tablet) {
+      margin-top: 64px;
 
-            li+li {
-                margin-top: 24px;
-            }
+      li + li {
+        margin-top: 24px;
+      }
+    }
+    @media screen and (max-width: $before-tablet) {
+      .button {
+        width: 194px;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column-reverse;
+
+      justify-content: flex-end;
+      align-items: center;
+
+      margin-top: -10px;
+
+      @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
+        li + li {
+          margin-bottom: 20px;
         }
-
-        @media screen and (min-width: $tablet) {
-            display: flex;
-            flex-direction: column-reverse;
-
-            justify-content: flex-end;
-            align-items: center;
-
-            margin-top: -10px;
-
-            @media screen and (min-width: $tablet) and (max-width: $before-desktop) {
-                li+li {
-                    margin-bottom: 20px;
-                }
-            }
-        }
-
-        @media screen and (min-width: $desktop) {
-            margin-left: 20px;
-            align-items: baseline;
-
-
-            flex-direction: row;
-
-            li+li {
-                margin-left: 40px;
-            }
-        }
+      }
     }
 
-    &__contacts-link {
-        display: block;
-        font-size: 14px;
-        line-height: 1.36em;
-        letter-spacing: 0.2em;
-        color: $primary-text-color;
+    @media screen and (min-width: $desktop) {
+      margin-left: 20px;
+      align-items: baseline;
 
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
+      flex-direction: row;
 
-
-        @media screen and (min-width: $tablet) {
-            color: $h2-alt-text-color;
-            font-size: 12px;
-            line-height: 1.33em;
-            letter-spacing: 0.1em;
-        }
+      li + li {
+        margin-left: 40px;
+      }
     }
+  }
+
+  &__contacts-link {
+    display: block;
+    font-family: $font-family-open-sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      color: $h2-alt-text-color;
+      font-size: 12px;
+      line-height: 1.33em;
+      letter-spacing: 0.1em;
+    }
+  }
 }
 
 .header-container {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        justify-content: space-between;
-        min-width: 500px;
-        padding-left: 155px;
-    }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+    padding-left: 183px;
+  }
 }
 
 .soc-container {
-    @media screen and (min-width: $tablet) {
-        transform: rotate(-90deg);
-        background-color: $bg-color;
-        position: absolute;
-        top: 70px;
-        left: -450px;
-        z-index: 1;
+  @media screen and (min-width: $tablet) {
+    transform: rotate(-90deg);
+    background-color: $bg-color;
+    position: absolute;
+    top: 70px;
+    left: -450px;
+    z-index: 1;
 
-        min-height: 160px;
-        min-width: 1060px;
+    min-height: 160px;
+    min-width: 1060px;
 
-        padding-top: 70px;
-        padding-bottom: 40px;
-        padding-left: 40px;
-    }
-
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+  }
 }
 
 .header-soc {
+  &__list {
+    font-family: $font-family-open-sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
 
-    &__list {
+    @media screen and (max-width: $before-tablet) {
+      margin-top: 50px;
 
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.36em;
-        letter-spacing: 0.2em;
-
-        @media screen and (max-width: $before-tablet) {
-            margin-top: 50px;
-
-            li+li {
-                margin-top: 24px;
-            }
-        }
-
-        @media screen and (min-width: $tablet) {
-            display: flex;
-            font-size: 11px;
-            color: $primary-text-color;
-            transition: all $animation-effect;
-
-            li+li {
-                margin-left: 40px;
-            }
-        }
+      li + li {
+        margin-top: 24px;
+      }
     }
 
-    &__item {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      font-size: 11px;
+      color: $primary-text-color;
+      transition: all $animation-effect;
 
-        &:hover,
-        &:focus {
-            color: $accent-color;
-            cursor: pointer;
-        }
+      li + li {
+        margin-left: 40px;
+      }
+    }
+  }
 
-        &--line {
-            position: relative;
-            margin-left: 80px;
-
-            &::before {
-                content: '';
-                position: absolute;
-                background-color: rgba(157, 164, 189, 0.6);
-
-                width: 60px;
-                height: 1px;
-                top: 8px;
-                left: -80px;
-
-                cursor: default;
-            }
-
-            &:hover,
-            &:focus {
-                color: $accent-color;
-                cursor: pointer;
-            }
-        }
+  &__item {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      cursor: pointer;
     }
 
-    .youtube {
-        @media screen and (max-width: $before-tablet) {
-            display: block;
-            padding-left: 80px;
-        }
+    &--line {
+      position: relative;
+      margin-left: 80px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: rgba(157, 164, 189, 0.6);
+
+        width: 60px;
+        height: 1px;
+        top: 8px;
+        left: -80px;
+
+        cursor: default;
+      }
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+        cursor: pointer;
+      }
     }
+  }
+
+  .youtube {
+    @media screen and (max-width: $before-tablet) {
+      display: block;
+      padding-left: 80px;
+    }
+  }
 }
 
 .logo {
-    fill: $bg-color;
+  fill: $bg-color;
 
-    @media screen and (min-width: $tablet) {
-        fill: $primary-text-color;
-        z-index: 2;
-        position: absolute;
-        top: 30px;
-        left: 50px;
-    }
+  @media screen and (min-width: $tablet) {
+    fill: $primary-text-color;
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
 }
 
 .menu-container {
-    background-color: transparent;
+  background-color: transparent;
 
-    @media screen and (max-width: $before-tablet) {
+  @media screen and (max-width: $before-tablet) {
+    display: none;
+    position: absolute;
+    transform: scaleY(0);
+    right: 0;
+    top: 0;
 
-        display: none;
-        position: absolute;
-        transform: scaleY(0);
-        right: 0;
-        top: 0;
+    padding: 118px 103px 227px 0;
+    //min-width: 200px;
+    //max-width: 357px;
+    background-color: $bg-color;
+    z-index: 4;
 
-        padding: 115px 40px 220px;
-        min-width: 200px;
-        // max-width: 357px;
-        background-color: $bg-color;
-        z-index: 4;
-
-        &.is-open {
-            display: block;
-            overflow: hidden;
-            transform-origin: top;
-            transform: scaleY(1);
-            transition: transform $animation-effect;
-        }
+    &.is-open {
+      display: block;
+      overflow: hidden;
+      transform-origin: top;
+      transform: scaleY(1);
+      transition: transform $animation-effect;
     }
+  }
 }
 
 .drop-button {
-    @media screen and (max-width: $before-tablet) {
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: transparent;
-        outline: none;
+  @media screen and (max-width: $before-tablet) {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
 
-        display: inline-flex;
-        align-items: center;
-        margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
 
-        position: absolute;
-        top: 40px;
-        right: 20px;
-        z-index: 5;
-    }
+    position: absolute;
+    top: 48px;
+    right: 31px;
+    z-index: 5;
+  }
 
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 
-    .icon-cross {
-        display: none;
-    }
+  .icon-cross {
+    display: none;
+  }
 
-    &.is-open .icon-cross {
-        display: block;
-    }
+  &.is-open .icon-cross {
+    display: block;
+  }
 
-    &.is-open .icon-menu {
-        display: none;
-    }
-
+  &.is-open .icon-menu {
+    display: none;
+  }
 }
 
 .drop-down-icon .icon-menu {
-    fill: white;
+  fill: white;
 
-    @media screen and (min-width: $before-tablet) {
-        display: none;
-
-    }
+  @media screen and (min-width: $before-tablet) {
+    display: none;
+  }
 }
 
 //   Hero section
 
 .hero-title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    font-family: $font-family;
-    font-size: 48px;
-    line-height: 1.17em;
-    letter-spacing: 0.05em;
-    color: $bg-color;
+  font-family: $font-family;
+  font-size: 48px;
+  line-height: 1.17em;
+  letter-spacing: 0.05em;
+  color: $bg-color;
 
-    @media screen and (min-width:$desktop) {
-        font-size: 72px;
-        line-height: 1.18em;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 72px;
+    line-height: 1.18em;
+  }
 }
 
 .hero-title--second {
-    position: relative;
-    margin-bottom: 20px;
-    margin-left: 80px;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 80px;
 
-    font-size: 10px;
-    font-weight: 600;
-    line-height: 1.37em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.37em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
 
-    &::before {
-        position: absolute;
-        background-color: rgba(157, 164, 189, 0.6);
-        content: '';
-        width: 60px;
-        height: 1px;
-        top: 8px;
-        left: -80px;
-    }
+  &::before {
+    position: absolute;
+    background-color: rgba(157, 164, 189, 0.6);
+    content: '';
+    width: 60px;
+    height: 1px;
+    top: 8px;
+    left: -80px;
+  }
 
-    @media screen and (min-width:$tablet) {
-        font-size: 11px;
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 11px;
+  }
 }
 
 .container--hero {
-    padding-left: 31px;
-    display: flex;
-    flex-direction: column-reverse;
+  padding-left: 31px;
+  display: flex;
+  flex-direction: column-reverse;
 
-    @media screen and (max-width:$before-tablet) {
-        max-width: 310px;
-        margin-top: 110px;
-        padding-bottom: 180px;
-    }
+  @media screen and (max-width: $before-tablet) {
+    max-width: 310px;
+    margin-top: 110px;
+    padding-bottom: 180px;
+  }
 
-    @media screen and (min-width:520px) and(max-width:600px) {
-        margin-left: 50px;
-    }
+  @media screen and (min-width: 520px) and(max-width:600px) {
+    margin-left: 50px;
+  }
 
-    @media screen and (min-width:601px) and(max-width:$before-tablet) {
-        margin-left: 80px;
-    }
+  @media screen and (min-width: 601px) and(max-width:$before-tablet) {
+    margin-left: 80px;
+  }
 
-    @media screen and (min-width:$tablet) {
-        max-width: 355px;
-        margin-left: 255px;
-        padding-top: 200px;
-        padding-bottom: 245px;
-    }
+  @media screen and (min-width: $tablet) {
+    max-width: 355px;
+    margin-left: 255px;
+    padding-top: 200px;
+    padding-bottom: 245px;
+  }
 
-    @media screen and (min-width:$desktop) {
-        margin-left: 280px;
-        padding-bottom: 206px;
-    }
-
+  @media screen and (min-width: $desktop) {
+    margin-left: 280px;
+    padding-bottom: 206px;
+  }
 }
 
 .hero-info {
-    font-size: 16px;
-    line-height: 1.62em;
-    letter-spacing: 0.02em;
-    color: #9DA4BD;
+  font-size: 16px;
+  line-height: 1.62em;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 
-    @media screen and (min-width:$desktop) {
-        font-size: 18px;
-        line-height: 1.67em;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.67em;
+  }
 }
 
 .hero-overlay {
-    max-height: 680px;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-        url(..//images/header-slider/mobile-slider-img-3.jpg);
-    background-color: $primary-text-color;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  max-height: 680px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(..//images/header-slider/mobile-slider-img-3.jpg);
+  background-color: $primary-text-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-    @media screen and (max-width: $before-tablet) {
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-                url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
-        }
+  @media screen and (max-width: $before-tablet) {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(..//images/header-slider/mobile-slider-img-3@2x.jpg);
     }
+  }
 
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(..//images/header-slider/tabl-slider-img-3.jpg);
 
-    @media screen and (min-width: $tablet) {
-        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-            url(..//images/header-slider/tabl-slider-img-3.jpg);
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-                url(..//images/header-slider/tabl-slider-img-3@2x.jpg);
-        }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(..//images/header-slider/tabl-slider-img-3@2x.jpg);
     }
+  }
 
-    @media screen and (min-width: $desktop) {
-        background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-            url(..//images/header-slider/desk-slider-img-3.jpg);
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(..//images/header-slider/desk-slider-img-3.jpg);
 
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-                url(..//images/header-slider/desk-slider-img-3@2x.jpg);
-        }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url(..//images/header-slider/desk-slider-img-3@2x.jpg);
     }
+  }
 }
 
-
 .backdrop {
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(25, 28, 38, 0.2);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-    opacity: 1;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 28, 38, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  opacity: 1;
 
-    &.is-hidden {
-        opacity: 0;
-        overflow: hidden;
-        pointer-events: none;
-    }
+  &.is-hidden {
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
 }
 
 /* button*/
 
 .button-sl {
-    border: none;
-    display: inline-block;
-    // padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
+  border: none;
+  display: inline-block;
+  // padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
 
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.4;
-    letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    background-color: transparent;
-    color: rgba(157, 164, 189, 0.6);
+  background-color: transparent;
+  color: rgba(157, 164, 189, 0.6);
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: block;
-    }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .button-sl:hover,
 .button-sl:focus,
 .button-sl:active {
-    color: $bg-color-second;
-    outline: none;
+  color: $bg-color-second;
+  outline: none;
 }
 
 .prev-button {
-    text-align: start;
-    position: absolute;
+  text-align: start;
+  position: absolute;
 
-    transform: translate(0%, -50%);
-    z-index: 3;
+  transform: translate(0%, -50%);
+  z-index: 3;
 
-    @media screen and (min-width: 768px) {
-        right: 125px;
-        bottom: 100px;
-    }
+  @media screen and (min-width: 768px) {
+    right: 125px;
+    bottom: 100px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        right: 141px;
-        bottom: 70px;
-    }
+  @media screen and (min-width: 1280px) {
+    right: 141px;
+    bottom: 70px;
+  }
 }
 
 .next-button {
-    text-align: end;
-    position: absolute;
+  text-align: end;
+  position: absolute;
 
-    transform: translate(0%, -50%);
-    z-index: 3;
+  transform: translate(0%, -50%);
+  z-index: 3;
 
-    @media screen and (min-width: 768px) {
-        right: 40px;
-        bottom: 100px;
-    }
+  @media screen and (min-width: 768px) {
+    right: 40px;
+    bottom: 100px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        right: 55px;
-        bottom: 70px;
-    }
+  @media screen and (min-width: 1280px) {
+    right: 55px;
+    bottom: 70px;
+  }
 }
 
 .prev-button:after,
 .next-button:after {
-    content: '';
-    width: 60px;
-    height: 1px;
-    display: block;
-    cursor: pointer;
-    bottom: 0;
-    margin-top: 8px;
-    background-color: rgba(157, 164, 189, 0.6);
-    background-size: auto;
+  content: '';
+  width: 60px;
+  height: 1px;
+  display: block;
+  cursor: pointer;
+  bottom: 0;
+  margin-top: 8px;
+  background-color: rgba(157, 164, 189, 0.6);
+  background-size: auto;
 }
 
 .prev-button:hover:after,
 .prev-button:focus:after {
-    background-color: $bg-color-second;
+  background-color: $bg-color-second;
 }
 
 .next-button:hover:after,
 .next-button:focus:after {
-    background-color: $bg-color-second;
+  background-color: $bg-color-second;
 }
 
 /* дот-линии*/
 .nav-dots {
-    position: absolute;
-    top: 40%;
+  position: absolute;
+  top: 40%;
 
-    transform: translateY(-50%);
-    z-index: 3;
-    width: 40px;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        right: 39px;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    right: 39px;
+  }
 
-    @media screen and (min-width: 768px) {
-        right: 55px;
-    }
+  @media screen and (min-width: 768px) {
+    right: 55px;
+  }
 }
 
 .nav-dot {
-    display: block;
-    width: 8px;
-    height: 2px;
-    background: $bg-color-second;
-    cursor: pointer;
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: $bg-color-second;
+  cursor: pointer;
 }
 
 .nav-dot:not(:first-child) {
-    margin-top: 12px;
+  margin-top: 12px;
 }
 
 .nav-dot.active {
-    background: $bg-color-second;
-    width: 18px;
+  background: $bg-color-second;
+  width: 18px;
 }
 
 .hero {
-    position: relative;
+  position: relative;
 }

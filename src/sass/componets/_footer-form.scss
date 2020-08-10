@@ -4,7 +4,7 @@
 // }
 
 .footer-section {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
 
     background-color: $bg-color-footer;
@@ -17,23 +17,24 @@
 
   font-family: $font-family;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 100px 39px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     min-width: 50%;
-    padding: 90px 40px 130px 55px;
+    padding: 130px 40px 130px 55px;
   }
 }
 
 .title-footer {
-  margin-bottom: 80px;
+  margin-top: 0;
+  margin-bottom: 44px;
   // white-space: nowrap;
   max-width: 418px;
   height: 49px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     text-align: left;
   }
 
@@ -47,7 +48,7 @@
 
 .form {
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     text-align: left;
   }
 }
@@ -59,7 +60,7 @@
 }
 
 .form-list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -86,7 +87,7 @@
 }
 
 .item-form {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     &:not(:last-child) {
       // display: flex;
       // flex-wrap: wrap;
@@ -102,7 +103,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     &:not(:last-child) {
       // display: flex;
       min-inline-size: 250px;
