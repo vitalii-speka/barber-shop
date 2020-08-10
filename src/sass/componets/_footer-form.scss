@@ -23,7 +23,7 @@
 
   @media screen and (min-width: 1280px) {
     min-width: 50%;
-    padding: 130px 40px 130px 55px;
+    padding: 90px 40px 130px 55px;
   }
 }
 
@@ -117,6 +117,7 @@
 .form-input {
   width: 100%;
   color: $bg-color;
+  background-color: $bg-color-footer;
   padding-left: 80px;
   padding-bottom: 5px;
   font-size: 11px;

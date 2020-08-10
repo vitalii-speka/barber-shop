@@ -355,6 +355,8 @@ h1, h2, p {
 
 .container--hero {
     padding-left: 31px;
+    display: flex;
+    flex-direction: column-reverse;
 
     @media screen and (max-width:$before-tablet) {
         max-width: 310px;
