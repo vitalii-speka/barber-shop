@@ -1,5 +1,5 @@
 Команда №12.
-Состав: @Anastasiia Pankrusheva(Punkrusheva) @Yuriy Dikopoltsev @Ekateryna Ponomarenko @Maria Ostapenko (blood-mari) @Vitalii Mamchur @Anatoliy Nits и я :) - Vitalii Speka
+Состав: @Anastasiia Pankrusheva @Yuriy Dikopoltsev @Ekateryna Ponomarenko @Maria Ostapenko @Vitalii Mamchur @Anatoliy Nits и я :) - Vitalii Speka
 
 Проект: https://vitalii-speka.github.io/parcel-project-template/
 
